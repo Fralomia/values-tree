@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<!-- saved from url=(0052)file:///Users/francisco/Downloads/values-tree_2.html -->
+<!-- saved from url=(0052)file:///Users/francisco/Downloads/values-tree_4.html -->
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Values Tree</title>
-<link href="./values_tree_files/css2" rel="stylesheet">
+<link href="./index_files/css2" rel="stylesheet">
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -432,14 +432,14 @@
     </div>
     <div class="prog-line" id="line3"></div>
     <div class="prog-step">
-      <div class="prog-dot" id="dot4">✓</div>
+      <div class="prog-dot" id="dotresults">✓</div>
       <div class="prog-label">Done</div>
     </div>
   </div>
 </div>
 
-<!-- ══════════════ SECTION 1: ROOTS ══════════════ -->
-<div class="screen active" id="screen1">
+<!-- ══════════════ SECTION 1a: ROOTS Q1 ══════════════ -->
+<div class="screen active" id="screen1a">
   <div class="section-badge badge-roots">🌱 Section 1 — Roots</div>
   <h2 class="section-title">What do you need to feel good?</h2>
   <p class="section-desc">What do you need in order to feel good and function well? Build the roots of your values tree by selecting the values that are most important for your well-being.</p>
@@ -447,23 +447,35 @@
   <div class="question-block">
     <div class="q-label">Question 1.1</div>
     <div class="q-text">Mark all the values that you need to feel good and function well.</div>
-    <div class="q-counter" id="r1-counter">Select up to 9 — <strong id="r1-num">0 / 9</strong> selected</div>
+    <div class="q-counter">Select up to 9 — <strong id="r1-num">0 / 9</strong> selected</div>
     <div class="chips-wrap" id="r1-chips"><button class="chip"><span class="chip-name">Affection</span></button><button class="chip"><span class="chip-name">Appreciation</span></button><button class="chip"><span class="chip-name">Assertiveness</span></button><button class="chip"><span class="chip-name">Belonging</span></button><button class="chip"><span class="chip-name">Carefulness</span></button><button class="chip"><span class="chip-name">Comfort</span></button><button class="chip"><span class="chip-name">Dependability</span></button><button class="chip"><span class="chip-name">Discipline</span></button><button class="chip"><span class="chip-name">Efficiency</span></button><button class="chip"><span class="chip-name">Excitement</span></button><button class="chip"><span class="chip-name">Fairness</span></button><button class="chip"><span class="chip-name">Flexibility</span></button><button class="chip"><span class="chip-name">Health</span></button><button class="chip"><span class="chip-name">Helpfulness</span></button><button class="chip"><span class="chip-name">Honor</span></button><button class="chip"><span class="chip-name">Hope</span></button><button class="chip"><span class="chip-name">Humor</span></button><button class="chip"><span class="chip-name">Influence</span></button><button class="chip"><span class="chip-name">Intimacy</span></button><button class="chip"><span class="chip-name">Joy</span></button><button class="chip"><span class="chip-name">Kindness</span></button><button class="chip"><span class="chip-name">Livelihood</span></button><button class="chip"><span class="chip-name">Loyalty</span></button><button class="chip"><span class="chip-name">Moderation</span></button><button class="chip"><span class="chip-name">Order</span></button><button class="chip"><span class="chip-name">Persistence</span></button><button class="chip"><span class="chip-name">Pleasure</span></button><button class="chip"><span class="chip-name">Realism</span></button><button class="chip"><span class="chip-name">Recreation</span></button><button class="chip"><span class="chip-name">Respect</span></button><button class="chip"><span class="chip-name">Safety</span></button><button class="chip"><span class="chip-name">Solitude</span></button><button class="chip"><span class="chip-name">Stability</span></button><button class="chip"><span class="chip-name">Tradition</span></button><button class="chip"><span class="chip-name">Trust</span></button><button class="chip"><span class="chip-name">Variety</span></button><button class="chip"><span class="chip-name">Vulnerability</span></button><button class="chip"><span class="chip-name">Welcome</span></button><button class="chip"><span class="chip-name">Work</span></button></div>
   </div>
 
-  <div class="question-block" id="r2-block">
+  <div class="nav">
+    <button class="btn btn-primary roots-btn" id="btn1a" onclick="goTo(&#39;1b&#39;)" disabled="">Next →</button>
+  </div>
+</div>
+
+<!-- ══════════════ SECTION 1b: ROOTS Q2 ══════════════ -->
+<div class="screen" id="screen1b">
+  <div class="section-badge badge-roots">🌱 Section 1 — Roots</div>
+  <h2 class="section-title">Your top 6 roots</h2>
+  <p class="section-desc">From the values you selected, choose the six most important for your well-being.</p>
+
+  <div class="question-block">
     <div class="q-label">Question 1.2</div>
     <div class="q-text">Choose the six most important values that you need to feel good and function well.</div>
     <div id="r2-body"><div class="q2-locked">↑ Complete question above first to unlock your selection here.</div></div>
   </div>
 
   <div class="nav">
-    <button class="btn btn-primary roots-btn" id="btn1" onclick="goTo(2)" disabled="">Continue to Trunk →</button>
+    <button class="btn btn-ghost" onclick="goTo(&#39;1a&#39;)">← Back</button>
+    <button class="btn btn-primary roots-btn" id="btn1b" onclick="goTo(&#39;2a&#39;)" disabled="">Continue to Trunk →</button>
   </div>
 </div>
 
-<!-- ══════════════ SECTION 2: TRUNK ══════════════ -->
-<div class="screen" id="screen2">
+<!-- ══════════════ SECTION 2a: TRUNK Q1 ══════════════ -->
+<div class="screen" id="screen2a">
   <div class="section-badge badge-trunk">🌿 Section 2 — Trunk</div>
   <h2 class="section-title">How do you express yourself?</h2>
   <p class="section-desc">What values enable you to fully express yourself and feel happy and satisfied in your everyday life? Build the trunk of your tree by selecting the values that are most important for your self-expression.</p>
@@ -471,9 +483,21 @@
   <div class="question-block">
     <div class="q-label">Question 2.1</div>
     <div class="q-text">Mark all the values that feel important for you to express yourself and develop.</div>
-    <div class="q-counter" id="t1-counter">Select up to 9 — <strong id="t1-num">0 / 9</strong> selected</div>
+    <div class="q-counter">Select up to 9 — <strong id="t1-num">0 / 9</strong> selected</div>
     <div class="chips-wrap" id="t1-chips"><button class="chip"><span class="chip-name">Acceptance</span></button><button class="chip"><span class="chip-name">Achieve</span></button><button class="chip"><span class="chip-name">Appear</span></button><button class="chip"><span class="chip-name">Artistic</span></button><button class="chip"><span class="chip-name">Authenticity</span></button><button class="chip"><span class="chip-name">Awareness</span></button><button class="chip"><span class="chip-name">Balance</span></button><button class="chip"><span class="chip-name">Calm</span></button><button class="chip"><span class="chip-name">Challenge</span></button><button class="chip"><span class="chip-name">Communication</span></button><button class="chip"><span class="chip-name">Cooperation</span></button><button class="chip"><span class="chip-name">Courage</span></button><button class="chip"><span class="chip-name">Create</span></button><button class="chip"><span class="chip-name">Creativity</span></button><button class="chip"><span class="chip-name">Curiosity</span></button><button class="chip"><span class="chip-name">Educated</span></button><button class="chip"><span class="chip-name">Empathy</span></button><button class="chip"><span class="chip-name">Explore</span></button><button class="chip"><span class="chip-name">Focus</span></button><button class="chip"><span class="chip-name">Generosity</span></button><button class="chip"><span class="chip-name">Gratitude</span></button><button class="chip"><span class="chip-name">Honesty</span></button><button class="chip"><span class="chip-name">Independence</span></button><button class="chip"><span class="chip-name">Initiate</span></button><button class="chip"><span class="chip-name">Innovation</span></button><button class="chip"><span class="chip-name">Integrity</span></button><button class="chip"><span class="chip-name">Lead</span></button><button class="chip"><span class="chip-name">Meaning</span></button><button class="chip"><span class="chip-name">Openness</span></button><button class="chip"><span class="chip-name">Passion</span></button><button class="chip"><span class="chip-name">Patience</span></button><button class="chip"><span class="chip-name">Perceptive</span></button><button class="chip"><span class="chip-name">Quality</span></button><button class="chip"><span class="chip-name">Rational</span></button><button class="chip"><span class="chip-name">Responsibility</span></button><button class="chip"><span class="chip-name">Scientific</span></button><button class="chip"><span class="chip-name">Support</span></button><button class="chip"><span class="chip-name">Vitality</span></button></div>
   </div>
+
+  <div class="nav">
+    <button class="btn btn-ghost" onclick="goTo(&#39;1b&#39;)">← Back</button>
+    <button class="btn btn-primary trunk-btn" id="btn2a" onclick="goTo(&#39;2b&#39;)" disabled="">Next →</button>
+  </div>
+</div>
+
+<!-- ══════════════ SECTION 2b: TRUNK Q2 ══════════════ -->
+<div class="screen" id="screen2b">
+  <div class="section-badge badge-trunk">🌿 Section 2 — Trunk</div>
+  <h2 class="section-title">Your top 6 trunk values</h2>
+  <p class="section-desc">From the values you selected, choose the six most important for your self-expression.</p>
 
   <div class="question-block">
     <div class="q-label">Question 2.2</div>
@@ -482,13 +506,13 @@
   </div>
 
   <div class="nav">
-    <button class="btn btn-ghost" onclick="goTo(1)">← Back</button>
-    <button class="btn btn-primary trunk-btn" id="btn2" onclick="goTo(3)" disabled="">Continue to Leaves →</button>
+    <button class="btn btn-ghost" onclick="goTo(&#39;2a&#39;)">← Back</button>
+    <button class="btn btn-primary trunk-btn" id="btn2b" onclick="goTo(&#39;3a&#39;)" disabled="">Continue to Leaves →</button>
   </div>
 </div>
 
-<!-- ══════════════ SECTION 3: LEAVES ══════════════ -->
-<div class="screen" id="screen3">
+<!-- ══════════════ SECTION 3a: LEAVES Q1 ══════════════ -->
+<div class="screen" id="screen3a">
   <div class="section-badge badge-leaves">🍃 Section 3 — Leaves</div>
   <h2 class="section-title">What do you give to the world?</h2>
   <p class="section-desc">What lies beyond your own self-fulfilment? Fill the tree crown with values that focus on what you would like to contribute to others, your community and ultimately the world.</p>
@@ -496,9 +520,21 @@
   <div class="question-block">
     <div class="q-label">Question 3.1</div>
     <div class="q-text">Mark all the values that you would like to contribute with to the world around you.</div>
-    <div class="q-counter" id="l1-counter">Select up to 9 — <strong id="l1-num">0 / 9</strong> selected</div>
+    <div class="q-counter">Select up to 9 — <strong id="l1-num">0 / 9</strong> selected</div>
     <div class="chips-wrap" id="l1-chips"><button class="chip"><span class="chip-name">Activism</span></button><button class="chip"><span class="chip-name">Beauty</span></button><button class="chip"><span class="chip-name">Co-creation</span></button><button class="chip"><span class="chip-name">Community</span></button><button class="chip"><span class="chip-name">Compassion</span></button><button class="chip"><span class="chip-name">Complexity</span></button><button class="chip"><span class="chip-name">Contribute</span></button><button class="chip"><span class="chip-name">Detachment</span></button><button class="chip"><span class="chip-name">Development</span></button><button class="chip"><span class="chip-name">Diversity</span></button><button class="chip"><span class="chip-name">Equality</span></button><button class="chip"><span class="chip-name">Ethical</span></button><button class="chip"><span class="chip-name">Forgiveness</span></button><button class="chip"><span class="chip-name">Heal</span></button><button class="chip"><span class="chip-name">Humble</span></button><button class="chip"><span class="chip-name">Include</span></button><button class="chip"><span class="chip-name">Inspire</span></button><button class="chip"><span class="chip-name">Integrate</span></button><button class="chip"><span class="chip-name">Interdependence</span></button><button class="chip"><span class="chip-name">Intuition</span></button><button class="chip"><span class="chip-name">Knowing</span></button><button class="chip"><span class="chip-name">Mentor</span></button><button class="chip"><span class="chip-name">Peace</span></button><button class="chip"><span class="chip-name">Presence</span></button><button class="chip"><span class="chip-name">Protect</span></button><button class="chip"><span class="chip-name">Selfless</span></button><button class="chip"><span class="chip-name">Simplicity</span></button><button class="chip"><span class="chip-name">Spirituality</span></button><button class="chip"><span class="chip-name">Sustainability</span></button><button class="chip"><span class="chip-name">Tranquility</span></button><button class="chip"><span class="chip-name">Transform</span></button><button class="chip"><span class="chip-name">Understanding</span></button><button class="chip"><span class="chip-name">Vision</span></button><button class="chip"><span class="chip-name">Wisdom</span></button></div>
   </div>
+
+  <div class="nav">
+    <button class="btn btn-ghost" onclick="goTo(&#39;2b&#39;)">← Back</button>
+    <button class="btn btn-primary leaves-btn" id="btn3a" onclick="goTo(&#39;3b&#39;)" disabled="">Next →</button>
+  </div>
+</div>
+
+<!-- ══════════════ SECTION 3b: LEAVES Q2 ══════════════ -->
+<div class="screen" id="screen3b">
+  <div class="section-badge badge-leaves">🍃 Section 3 — Leaves</div>
+  <h2 class="section-title">Your top 6 leaves</h2>
+  <p class="section-desc">From the values you selected, choose the six most important contributions to the world around you.</p>
 
   <div class="question-block">
     <div class="q-label">Question 3.2</div>
@@ -507,13 +543,13 @@
   </div>
 
   <div class="nav">
-    <button class="btn btn-ghost" onclick="goTo(2)">← Back</button>
-    <button class="btn btn-primary leaves-btn" id="btn3" onclick="goTo(4)" disabled="">See my Values Tree →</button>
+    <button class="btn btn-ghost" onclick="goTo(&#39;3a&#39;)">← Back</button>
+    <button class="btn btn-primary leaves-btn" id="btn3b" onclick="goTo(&#39;results&#39;)" disabled="">See my Values Tree →</button>
   </div>
 </div>
 
 <!-- ══════════════ RESULTS ══════════════ -->
-<div class="screen" id="screen4">
+<div class="screen" id="screenresults">
   <div class="section-badge" style="background:#F5EFE6;color:#5C4A2A;">🌳 Your Values Tree</div>
   <h2 class="results-heading">Your personal values tree</h2>
   <p class="results-sub">Here are the core values across your three sections — the ones you identified as most important.</p>
@@ -527,8 +563,11 @@
 
   <div class="nav" style="margin-top: 40px;">
     <button class="btn btn-ghost" onclick="restart()">Start over</button>
+    <button class="btn btn-primary" style="background:#5C4A2A;border-color:#5C4A2A;" onclick="downloadTree()">Download as image ↓</button>
   </div>
 </div>
+
+<script src="./index_files/html2canvas.min.js"></script>
 
 <script>
   const VALUES = {
@@ -702,11 +741,12 @@
       updateSection1();
     });
     document.getElementById('r1-num').textContent = state.roots1.length + ' / 9';
+    document.getElementById('btn1a').disabled = state.roots1.length === 0;
     renderQ2('r2-body', state.roots1, state.roots2, 'roots', v => {
       toggle6(state.roots2, v);
       updateSection1();
     });
-    document.getElementById('btn1').disabled = state.roots2.length !== TOP;
+    document.getElementById('btn1b').disabled = state.roots2.length !== TOP;
   }
 
   function updateSection2() {
@@ -716,11 +756,12 @@
       updateSection2();
     });
     document.getElementById('t1-num').textContent = state.trunk1.length + ' / 9';
+    document.getElementById('btn2a').disabled = state.trunk1.length === 0;
     renderQ2('t2-body', state.trunk1, state.trunk2, 'trunk', v => {
       toggle6(state.trunk2, v);
       updateSection2();
     });
-    document.getElementById('btn2').disabled = state.trunk2.length !== TOP;
+    document.getElementById('btn2b').disabled = state.trunk2.length !== TOP;
   }
 
   function updateSection3() {
@@ -730,11 +771,12 @@
       updateSection3();
     });
     document.getElementById('l1-num').textContent = state.leaves1.length + ' / 9';
+    document.getElementById('btn3a').disabled = state.leaves1.length === 0;
     renderQ2('l2-body', state.leaves1, state.leaves2, 'leaves', v => {
       toggle6(state.leaves2, v);
       updateSection3();
     });
-    document.getElementById('btn3').disabled = state.leaves2.length !== TOP;
+    document.getElementById('btn3b').disabled = state.leaves2.length !== TOP;
   }
 
   function toggle(arr, v) {
@@ -749,23 +791,35 @@
     else if (arr.length < TOP) arr.push(v);
   }
 
-  function goTo(n) {
-    document.querySelectorAll('.screen').forEach((s, i) => s.classList.toggle('active', i + 1 === n));
-    updateDots(n);
+  function goTo(id) {
+    document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+    document.getElementById('screen' + id).classList.add('active');
+    updateDots(id);
     window.scrollTo({ top: 0, behavior: 'smooth' });
-    if (n === 4) renderResults();
+    if (id === 'results') renderResults();
   }
 
-  function updateDots(step) {
-    for (let i = 1; i <= 4; i++) {
-      const dot = document.getElementById('dot' + i);
+  function updateDots(activeId) {
+    const sectionMap = {
+      '1a': 1, '1b': 1,
+      '2a': 2, '2b': 2,
+      '3a': 3, '3b': 3,
+      'results': 4
+    };
+    const active = sectionMap[activeId];
+
+    ['dot1','dot2','dot3','dotresults'].forEach((dotId, i) => {
+      const dot = document.getElementById(dotId);
+      if (!dot) return;
+      const step = i + 1;
       dot.classList.remove('active', 'done');
-      if (i < step) dot.classList.add('done');
-      else if (i === step) dot.classList.add('active');
-    }
+      if (step < active) dot.classList.add('done');
+      else if (step === active) dot.classList.add('active');
+    });
+
     for (let i = 1; i <= 3; i++) {
       const line = document.getElementById('line' + i);
-      if (line) line.classList.toggle('filled', i < step);
+      if (line) line.classList.toggle('filled', i < active);
     }
   }
 
@@ -826,10 +880,41 @@
 
   function restart() {
     Object.keys(state).forEach(k => state[k] = []);
-    goTo(1);
+    goTo('1a');
     updateSection1();
     updateSection2();
     updateSection3();
+  }
+
+  function downloadTree() {
+    const btn = document.querySelector('[onclick="downloadTree()"]');
+    const originalText = btn.textContent;
+    btn.textContent = 'Generating…';
+    btn.disabled = true;
+
+    const target = document.getElementById('results-tree');
+
+    html2canvas(target, {
+      backgroundColor: '#FDFAF6',
+      scale: 2,
+      useCORS: true,
+      padding: 32,
+      onclone: (doc) => {
+        const el = doc.getElementById('results-tree');
+        el.style.padding = '32px';
+        el.style.borderRadius = '0';
+      }
+    }).then(canvas => {
+      const link = document.createElement('a');
+      link.download = 'my-values-tree.png';
+      link.href = canvas.toDataURL('image/png');
+      link.click();
+      btn.textContent = originalText;
+      btn.disabled = false;
+    }).catch(() => {
+      btn.textContent = originalText;
+      btn.disabled = false;
+    });
   }
 
   updateSection1();
